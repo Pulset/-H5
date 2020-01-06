@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid black;
+      margin: 0 auto;
+      position: relative;
+    }
+    .box div {
+      width: 98px;
+      height: 98px;
+      border: 1px solid black;
+      text-align: center;
+      line-height: 98px;
+    }
+
+    #start {
+      background-color: rgba(255, 0, 0, 0.8);
+    }
+
+    div.active {
+      width: 98px;
+      height: 98px;
+      background-color: tomato;
+      opacity: 0.2;
+      position: absolute;
+      top: 0;
+      left: 0px;
+    }
+
+    @keyframes mymove1 {
+      0% {
+        top: 0;
+        left: 0;
+      }
+      12.5% {
+        top: 0;
+        left: 100px;
+      }
+      25% {
+        top: 0;
+        left: 200px;
+      }
+      37.5% {
+        top: 100px;
+        left: 200px;
+      }
+      50% {
+        top: 200px;
+        left: 200px;
+      }
+      62.5% {
+        top: 200px;
+        left: 100px;
+      }
+      75% {
+        top: 200px;
+        left: 0;
+      }
+      87.5% {
+        top: 100px;
+        left: 0;
+      }
+      100% {
+        top: 0;
+        left: 0px;
+      }
+    }
+
+    @keyframes mymove2 {
+      0% {
+        top: 0;
+        left: 0;
+      }
+      12.5% {
+        top: 0;
+        left: 100px;
+      }
+      25% {
+        top: 0;
+        left: 200px;
+      }
+      37.5% {
+        top: 100px;
+        left: 200px;
+      }
+      50% {
+        top: 200px;
+        left: 200px;
+      }
+      62.5% {
+        top: 200px;
+        left: 100px;
+      }
+      75% {
+        top: 200px;
+        left: 0;
+      }
+      87.5% {
+        top: 100px;
+        left: 0;
+      }
+      100% {
+        top: 0;
+        left: 0px;
+      }
+    }
+
+    @keyframes mymove3 {
+      0% {
+        top: 0;
+        left: 0;
+      }
+      12.5% {
+        top: 0;
+        left: 100px;
+      }
+      25% {
+        top: 0;
+        left: 200px;
+      }
+      37.5% {
+        top: 100px;
+        left: 200px;
+      }
+      50% {
+        top: 200px;
+        left: 200px;
+      }
+      62.5% {
+        top: 200px;
+        left: 100px;
+      }
+      75% {
+        top: 200px;
+        left: 0;
+      }
+      87.5% {
+        top: 100px;
+        left: 0;
+      }
+      100% {
+        top: 0;
+        left: 0px;
+      }
+    }
+    @keyframes mymove4 {
+      0% {
+        top: 0;
+        left: 0;
+      }
+      12.5% {
+        top: 0;
+        left: 100px;
+      }
+      25% {
+        top: 0;
+        left: 200px;
+      }
+      37.5% {
+        top: 100px;
+        left: 200px;
+      }
+      50% {
+        top: 200px;
+        left: 200px;
+      }
+      62.5% {
+        top: 200px;
+        left: 100px;
+      }
+      75% {
+        top: 200px;
+        left: 0;
+      }
+      87.5% {
+        top: 100px;
+        left: 0;
+      }
+      100% {
+        top: 0;
+        left: 0px;
+      }
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="active"></div>
+      <div>华为</div>
+      <div>iPhone X</div>
+      <div>谢谢惠顾</div>
+      <div>手环</div>
+      <div id="start">开始</div>
+      <div>小熊抱枕</div>
+      <div>格力冰箱</div>
+      <div>电风扇</div>
+      <div>小度音箱</div>
+    </div>
+    <script src="./random.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
